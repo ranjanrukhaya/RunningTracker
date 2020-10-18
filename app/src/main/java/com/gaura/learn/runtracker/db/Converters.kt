@@ -8,8 +8,8 @@ import java.io.ByteArrayOutputStream
 class Converters {
 
     @TypeConverter
-    fun toBitMap(byteArray: ByteArray) : Bitmap {
-        return BitmapFactory.decodeByteArray(byteArray, 0, byteArray.size)
+    fun toBitmap(bytes: ByteArray): Bitmap {
+        return BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
     }
 
     @TypeConverter
